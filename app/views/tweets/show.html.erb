@@ -1,0 +1,6 @@
+
+<p>UserName : <%= @tweet.user_name %></p>
+<p>Tweet : <%= @tweet.message %>
+<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@tweet.latitude},#{@tweet.logitude}&zoom=7&size=640x400&key=AIzaSyA4BHW3txEdqfxzdTlPwaHsYRSZbfeIcd8",
+              class: 'img-fluid img-rounded', alt: "#{@tweet.user_name} on the map" %>
+

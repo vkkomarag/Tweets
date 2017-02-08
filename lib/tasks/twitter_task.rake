@@ -16,7 +16,7 @@ namespace :twitter_task do
 		    $client.filter(locations: "-122.75,36.8,-121.75,37.8") do |tweet|
 		    @tweet_fibers << Proc.new { 
 		        unless tweet['geo'].nil?
-				    Storing.create(
+				    UserTweet.create(
 					logitude: tweet['geo']['coordinates'][0],
 					latitude: tweet['geo']['coordinates'][1],
 					message: tweet['text'],

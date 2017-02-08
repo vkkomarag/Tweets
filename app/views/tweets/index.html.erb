@@ -1,4 +1,8 @@
-
+<%= form_tag do %>
+<p>Latitude: <%= text_field_tag :lat %>
+Longitude: <%= text_field_tag :log %>
+<%= submit_tag "Search " %></p>
+<% end %>
 <table>
 <tr>
 <th>Username</th>
